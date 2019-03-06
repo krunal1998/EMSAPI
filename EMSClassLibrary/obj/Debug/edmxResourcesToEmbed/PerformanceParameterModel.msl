@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PerformanceParameterModelStoreContainer" CdmEntityContainer="PerformanceParameterEntities">
+    <EntitySetMapping Name="PERFORMANCEPARAMETER">
+      <EntityTypeMapping TypeName="PerformanceParameterModel.PERFORMANCEPARAMETER">
+        <MappingFragment StoreEntitySet="PERFORMANCEPARAMETER">
+          <ScalarProperty Name="ParameterId" ColumnName="ParameterId" />
+          <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+          <ScalarProperty Name="ParameterName" ColumnName="ParameterName" />
+          <ScalarProperty Name="MinRating" ColumnName="MinRating" />
+          <ScalarProperty Name="MaxRating" ColumnName="MaxRating" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

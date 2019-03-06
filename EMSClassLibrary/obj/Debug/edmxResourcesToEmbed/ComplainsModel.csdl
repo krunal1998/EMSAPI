@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComplainsModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="COMPLAINS">
+    <Key>
+      <PropertyRef Name="ComplainId" />
+    </Key>
+    <Property Name="ComplainId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmployeeId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ComplainTypeId" Type="Int32" Nullable="false" />
+    <Property Name="ComplainDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ComplainStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="FeedbackRating" Type="Int32" />
+    <Property Name="feedbackDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ComplainDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityContainer Name="ComplainsEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="COMPLAINS" EntityType="Self.COMPLAINS" />
+  </EntityContainer>
+</Schema>

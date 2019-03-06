@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AllowancesModelStoreContainer" CdmEntityContainer="AllowancesEntities">
+    <EntitySetMapping Name="ALLOWANCES">
+      <EntityTypeMapping TypeName="AllowancesModel.ALLOWANCES">
+        <MappingFragment StoreEntitySet="ALLOWANCES">
+          <ScalarProperty Name="AllowanceId" ColumnName="AllowanceId" />
+          <ScalarProperty Name="AllowanceName" ColumnName="AllowanceName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

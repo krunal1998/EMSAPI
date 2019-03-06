@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AttendanceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ATTENDANCE">
+    <Key>
+      <PropertyRef Name="EmployeeId" />
+      <PropertyRef Name="PunchInDate" />
+    </Key>
+    <Property Name="EmployeeId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PunchInDate" Type="date" Nullable="false" />
+    <Property Name="PunchInTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="PunchOutTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="WorkingHours" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="AttendanceModelStoreContainer">
+    <EntitySet Name="ATTENDANCE" EntityType="Self.ATTENDANCE" Schema="navkar_student" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

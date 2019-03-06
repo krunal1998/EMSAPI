@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63FC95FC-F1C8-467D-95E1-6BE52C795780}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EMSClassLibrary</RootNamespace>
+    <AssemblyName>EMSClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ALLOCATEDALLOWANCES.cs">
+      <DependentUpon>AllocatedAllowancesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllocatedAllowancesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllocatedAllowancesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllocatedAllowancesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllocatedAllowancesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllocatedAllowancesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllocatedAllowancesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ALLOWANCES.cs">
+      <DependentUpon>AllowancesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllowancesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllowancesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllowancesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllowancesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AllowancesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllowancesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ATTENDANCE.cs">
+      <DependentUpon>AttendanceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AttendanceModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AttendanceModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="COMPLAINS.cs">
+      <DependentUpon>ComplainsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainTypeModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainTypeModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainTypeModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainTypeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComplainTypeModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ComplainTypeModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="COMPLAINTYPES.cs">
+      <DependentUpon>ComplainTypeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTACTDETAILS.cs">
+      <DependentUpon>ContactDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactDetailsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactDetailsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactDetailsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactDetailsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactDetailsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DEDUCTIONS.cs">
+      <DependentUpon>DeductionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DEDUCTIONSTRUCTURE.cs">
+      <DependentUpon>DeductionStructureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionStructureModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionStructureModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionStructureModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionStructureModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DeductionStructureModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeductionStructureModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DOCUMENTS.cs">
+      <DependentUpon>DocumentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DocumentsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EMERGENCYCONTACT.cs">
+      <DependentUpon>EmergencyContactModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyContactModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmergencyContactModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyContactModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmergencyContactModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmergencyContactModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEE.cs">
+      <DependentUpon>EmployeeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeaveModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLeaveModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeaveModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLeaveModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeLeaveModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYEELEAVES.cs">
+      <DependentUpon>EmployeeLeaveModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedReviewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratedReviewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedReviewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratedReviewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeneratedReviewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GeneratedReviewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="GENERATEREVIEW.cs">
+      <DependentUpon>GeneratedReviewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HolidayModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HolidayModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HOLIDAYS.cs">
+      <DependentUpon>HolidayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JOBTITLE.cs">
+      <DependentUpon>JobTitleModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobTitleModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobTitleModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobTitleModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobTitleModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JobTitleModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JobTitleModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVEALLOCATION.cs">
+      <DependentUpon>LeaveAllocationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveAllocationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveAllocationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveAllocationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveAllocationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveAllocationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVES.cs">
+      <DependentUpon>LeavesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeavesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeavesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeavesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeavesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeavesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeavesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LEAVETYPE.cs">
+      <DependentUpon>LeaveTypeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveTypeModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveTypeModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveTypeModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveTypeModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveTypeModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveTypeModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="LOGINDETAILS.cs">
+      <DependentUpon>LoginDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetailsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDetailsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetailsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LoginDetailsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PERFORMANCEPARAMETER.cs">
+      <DependentUpon>PerformanceParameterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceParameterModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceParameterModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceParameterModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceParameterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceParameterModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PerformanceParameterModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PERSONALDETAILS.cs">
+      <DependentUpon>PersonalDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetailsModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDetailsModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetailsModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDetailsModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalDetailsModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PersonalDetailsModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECT.cs">
+      <DependentUpon>ProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PROJECTEMPLOYEES.cs">
+      <DependentUpon>ProjectEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectEmployeesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectEmployeesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectEmployeesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectEmployeesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectEmployeesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REVIEW.cs">
+      <DependentUpon>ReviewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="SUPERVISOR.cs">
+      <DependentUpon>SupervisorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupervisorModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupervisorModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SupervisorModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SupervisorModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TASK.cs">
+      <DependentUpon>TaskModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TASKEMPLOYEES.cs">
+      <DependentUpon>TaskEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskEmployeesModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskEmployeesModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskEmployeesModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskEmployeesModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TaskEmployeesModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskEmployeesModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskModel.Context.cs">
+      <DependentUpon>TaskModel.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="TaskModel.cs">
+      <DependentUpon>TaskModel.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="TaskModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TaskModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="WEEKDAY.cs">
+      <DependentUpon>WeekDayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WeekDayModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeekDayModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WeekDayModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeekDayModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WeekDayModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WeekDayModel.edmx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="AllocatedAllowancesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AllocatedAllowancesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AllocatedAllowancesModel.edmx.diagram">
+      <DependentUpon>AllocatedAllowancesModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="AllowancesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AllowancesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AllowancesModel.edmx.diagram">
+      <DependentUpon>AllowancesModel.edmx</DependentUpon>
+    </None>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="AttendanceModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AttendanceModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="AttendanceModel.edmx.diagram">
+      <DependentUpon>AttendanceModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="EmployeeLeaveModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeLeaveModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ComplainsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ComplainsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ComplainsModel.edmx.diagram">
+      <DependentUpon>ComplainsModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ComplainTypeModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ComplainTypeModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ComplainTypeModel.edmx.diagram">
+      <DependentUpon>ComplainTypeModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ContactDetailsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ContactDetailsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ContactDetailsModel.edmx.diagram">
+      <DependentUpon>ContactDetailsModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="DeductionsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DeductionsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DeductionsModel.edmx.diagram">
+      <DependentUpon>DeductionsModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="DeductionStructureModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DeductionStructureModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DeductionStructureModel.edmx.diagram">
+      <DependentUpon>DeductionStructureModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="DocumentsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DocumentsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DocumentsModel.edmx.diagram">
+      <DependentUpon>DocumentsModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="EmergencyContactModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmergencyContactModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EmergencyContactModel.edmx.diagram">
+      <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
+    </None>
+    <None Include="EmployeeLeaveModel.edmx.diagram">
+      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="LeaveTypeModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LeaveTypeModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="JobTitleModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>JobTitleModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="HolidayModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HolidayModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="EmployeeModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EmployeeModel.edmx.diagram">
+      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="GeneratedReviewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>GeneratedReviewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="GeneratedReviewModel.edmx.diagram">
+      <DependentUpon>GeneratedReviewModel.edmx</DependentUpon>
+    </None>
+    <None Include="HolidayModel.edmx.diagram">
+      <DependentUpon>HolidayModel.edmx</DependentUpon>
+    </None>
+    <None Include="JobTitleModel.edmx.diagram">
+      <DependentUpon>JobTitleModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="LeavesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LeavesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="LeaveAllocationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LeaveAllocationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LeaveAllocationModel.edmx.diagram">
+      <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
+    </None>
+    <None Include="LeavesModel.edmx.diagram">
+      <DependentUpon>LeavesModel.edmx</DependentUpon>
+    </None>
+    <None Include="LeaveTypeModel.edmx.diagram">
+      <DependentUpon>LeaveTypeModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="LoginDetailsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoginDetailsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LoginDetailsModel.edmx.diagram">
+      <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <EntityDeploy Include="WeekDayModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WeekDayModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="SupervisorModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>SupervisorModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="PersonalDetailsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PersonalDetailsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="PerformanceParameterModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PerformanceParameterModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PerformanceParameterModel.edmx.diagram">
+      <DependentUpon>PerformanceParameterModel.edmx</DependentUpon>
+    </None>
+    <None Include="PersonalDetailsModel.edmx.diagram">
+      <DependentUpon>PersonalDetailsModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="ReviewModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ReviewModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ProjectModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProjectModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <EntityDeploy Include="ProjectEmployeesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ProjectEmployeesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ProjectEmployeesModel.edmx.diagram">
+      <DependentUpon>ProjectEmployeesModel.edmx</DependentUpon>
+    </None>
+    <None Include="ProjectModel.edmx.diagram">
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+    </None>
+    <None Include="ReviewModel.edmx.diagram">
+      <DependentUpon>ReviewModel.edmx</DependentUpon>
+    </None>
+    <None Include="SupervisorModel.edmx.diagram">
+      <DependentUpon>SupervisorModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="TaskEmployeesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TaskEmployeesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TaskEmployeesModel.edmx.diagram">
+      <DependentUpon>TaskEmployeesModel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="TaskModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TaskModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="TaskModel.edmx.diagram">
+      <DependentUpon>TaskModel.edmx</DependentUpon>
+    </None>
+    <None Include="WeekDayModel.edmx.diagram">
+      <DependentUpon>WeekDayModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AllocatedAllowancesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllocatedAllowancesModel.edmx</DependentUpon>
+      <LastGenOutput>AllocatedAllowancesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AllocatedAllowancesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllocatedAllowancesModel.edmx</DependentUpon>
+      <LastGenOutput>AllocatedAllowancesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="AllowancesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllowancesModel.edmx</DependentUpon>
+      <LastGenOutput>AllowancesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AllowancesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AllowancesModel.edmx</DependentUpon>
+      <LastGenOutput>AllowancesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="AttendanceModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AttendanceModel.edmx</DependentUpon>
+      <LastGenOutput>AttendanceModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="AttendanceModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>AttendanceModel.edmx</DependentUpon>
+      <LastGenOutput>AttendanceModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ComplainsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ComplainsModel.edmx</DependentUpon>
+      <LastGenOutput>ComplainsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ComplainsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ComplainsModel.edmx</DependentUpon>
+      <LastGenOutput>ComplainsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ComplainTypeModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ComplainTypeModel.edmx</DependentUpon>
+      <LastGenOutput>ComplainTypeModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ComplainTypeModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ComplainTypeModel.edmx</DependentUpon>
+      <LastGenOutput>ComplainTypeModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ContactDetailsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContactDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>ContactDetailsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ContactDetailsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ContactDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>ContactDetailsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DeductionsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeductionsModel.edmx</DependentUpon>
+      <LastGenOutput>DeductionsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DeductionsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeductionsModel.edmx</DependentUpon>
+      <LastGenOutput>DeductionsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DeductionStructureModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeductionStructureModel.edmx</DependentUpon>
+      <LastGenOutput>DeductionStructureModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DeductionStructureModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeductionStructureModel.edmx</DependentUpon>
+      <LastGenOutput>DeductionStructureModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DocumentsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DocumentsModel.edmx</DependentUpon>
+      <LastGenOutput>DocumentsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DocumentsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DocumentsModel.edmx</DependentUpon>
+      <LastGenOutput>DocumentsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmergencyContactModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
+      <LastGenOutput>EmergencyContactModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmergencyContactModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
+      <LastGenOutput>EmergencyContactModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeLeaveModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeLeaveModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeLeaveModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeLeaveModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EmployeeModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EmployeeModel.edmx</DependentUpon>
+      <LastGenOutput>EmployeeModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="GeneratedReviewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GeneratedReviewModel.edmx</DependentUpon>
+      <LastGenOutput>GeneratedReviewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="GeneratedReviewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>GeneratedReviewModel.edmx</DependentUpon>
+      <LastGenOutput>GeneratedReviewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="HolidayModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HolidayModel.edmx</DependentUpon>
+      <LastGenOutput>HolidayModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="HolidayModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HolidayModel.edmx</DependentUpon>
+      <LastGenOutput>HolidayModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="JobTitleModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JobTitleModel.edmx</DependentUpon>
+      <LastGenOutput>JobTitleModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="JobTitleModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>JobTitleModel.edmx</DependentUpon>
+      <LastGenOutput>JobTitleModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeaveAllocationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveAllocationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeaveAllocationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveAllocationModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeavesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeavesModel.edmx</DependentUpon>
+      <LastGenOutput>LeavesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeavesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeavesModel.edmx</DependentUpon>
+      <LastGenOutput>LeavesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeaveTypeModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeaveTypeModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveTypeModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LeaveTypeModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LeaveTypeModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveTypeModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="LoginDetailsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDetailsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="LoginDetailsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDetailsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PerformanceParameterModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PerformanceParameterModel.edmx</DependentUpon>
+      <LastGenOutput>PerformanceParameterModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PerformanceParameterModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PerformanceParameterModel.edmx</DependentUpon>
+      <LastGenOutput>PerformanceParameterModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PersonalDetailsModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PersonalDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>PersonalDetailsModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PersonalDetailsModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PersonalDetailsModel.edmx</DependentUpon>
+      <LastGenOutput>PersonalDetailsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectEmployeesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectEmployeesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectEmployeesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectEmployeesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProjectModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ProjectModel.edmx</DependentUpon>
+      <LastGenOutput>ProjectModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReviewModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewModel.edmx</DependentUpon>
+      <LastGenOutput>ReviewModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="ReviewModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>ReviewModel.edmx</DependentUpon>
+      <LastGenOutput>ReviewModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="SupervisorModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SupervisorModel.edmx</DependentUpon>
+      <LastGenOutput>SupervisorModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="SupervisorModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>SupervisorModel.edmx</DependentUpon>
+      <LastGenOutput>SupervisorModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="TaskEmployeesModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TaskEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>TaskEmployeesModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="TaskEmployeesModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TaskEmployeesModel.edmx</DependentUpon>
+      <LastGenOutput>TaskEmployeesModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="TaskModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TaskModel.Context.cs</LastGenOutput>
+      <DependentUpon>TaskModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="TaskModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TaskModel.cs</LastGenOutput>
+      <DependentUpon>TaskModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="WeekDayModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WeekDayModel.edmx</DependentUpon>
+      <LastGenOutput>WeekDayModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WeekDayModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WeekDayModel.edmx</DependentUpon>
+      <LastGenOutput>WeekDayModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

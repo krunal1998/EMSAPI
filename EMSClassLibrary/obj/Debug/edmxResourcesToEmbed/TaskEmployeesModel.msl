@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TaskEmployeesModelStoreContainer" CdmEntityContainer="TaskEmployeesEntities">
+    <EntitySetMapping Name="TASKEMPLOYEES">
+      <EntityTypeMapping TypeName="TaskEmployeesModel.TASKEMPLOYEES">
+        <MappingFragment StoreEntitySet="TASKEMPLOYEES">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="TaskId" ColumnName="TaskId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

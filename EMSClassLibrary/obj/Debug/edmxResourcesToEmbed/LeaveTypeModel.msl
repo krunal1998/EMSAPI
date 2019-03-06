@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LeaveTypeModelStoreContainer" CdmEntityContainer="LeaveTypeEntities">
+    <EntitySetMapping Name="LEAVETYPE">
+      <EntityTypeMapping TypeName="LeaveTypeModel.LEAVETYPE">
+        <MappingFragment StoreEntitySet="LEAVETYPE">
+          <ScalarProperty Name="LeaveTypeId" ColumnName="LeaveTypeId" />
+          <ScalarProperty Name="LeaveTypeName" ColumnName="LeaveTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

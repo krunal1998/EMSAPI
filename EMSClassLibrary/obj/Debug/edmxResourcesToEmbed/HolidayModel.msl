@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HolidayModelStoreContainer" CdmEntityContainer="HolidayEntities">
+    <EntitySetMapping Name="HOLIDAYS">
+      <EntityTypeMapping TypeName="HolidayModel.HOLIDAYS">
+        <MappingFragment StoreEntitySet="HOLIDAYS">
+          <ScalarProperty Name="HolidayId" ColumnName="HolidayId" />
+          <ScalarProperty Name="HolidayName" ColumnName="HolidayName" />
+          <ScalarProperty Name="HolidayDate" ColumnName="HolidayDate" />
+          <ScalarProperty Name="WorkDuration" ColumnName="WorkDuration" />
+          <ScalarProperty Name="RepeatedAnnually" ColumnName="RepeatedAnnually" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

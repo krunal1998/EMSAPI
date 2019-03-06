@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmergencyContactModelStoreContainer" CdmEntityContainer="EmergencyContactEntities">
+    <EntitySetMapping Name="EMERGENCYCONTACT">
+      <EntityTypeMapping TypeName="EmergencyContactModel.EMERGENCYCONTACT">
+        <MappingFragment StoreEntitySet="EMERGENCYCONTACT">
+          <ScalarProperty Name="EmergencyContactId" ColumnName="EmergencyContactId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Relation" ColumnName="Relation" />
+          <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
