@@ -17,7 +17,7 @@ namespace EMSClassLibrary
         public int HolidayId { get; set; }
         public string HolidayName { get; set; }
         public System.DateTime HolidayDate { get; set; }
-        public Nullable<int> WorkDuration { get; set; }
-        public Nullable<bool> RepeatedAnnually { get; set; }
+        public int WorkDuration { get; set; }
+        public int RepeatedAnnually { get; set; }
     }
 }

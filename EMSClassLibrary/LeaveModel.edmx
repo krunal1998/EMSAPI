@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="navkar_studentModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="LeaveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="LEAVES">
           <Key>
             <PropertyRef Name="LeaveId" />
@@ -18,16 +18,15 @@
           <Property Name="NumberOfDays" Type="float" Nullable="false" />
           <Property Name="LeaveStatus" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="Description" Type="varchar(max)" />
-          <Property Name="LeaveDocumnet" Type="image" />
         </EntityType>
-        <EntityContainer Name="navkar_studentModel1StoreContainer">
+        <EntityContainer Name="LeaveModelStoreContainer">
           <EntitySet Name="LEAVES" EntityType="Self.LEAVES" Schema="navkar_student" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="navkar_studentModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="LeaveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="LEAVES">
           <Key>
             <PropertyRef Name="LeaveId" />
@@ -41,7 +40,6 @@
           <Property Name="NumberOfDays" Type="Double" Nullable="false" />
           <Property Name="LeaveStatus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
-          <Property Name="LeaveDocumnet" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
         <EntityContainer Name="LeaveEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="LEAVES" EntityType="Self.LEAVES" />
@@ -51,9 +49,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="navkar_studentModel1StoreContainer" CdmEntityContainer="LeaveEntities">
+        <EntityContainerMapping StorageEntityContainer="LeaveModelStoreContainer" CdmEntityContainer="LeaveEntities">
           <EntitySetMapping Name="LEAVES">
-            <EntityTypeMapping TypeName="navkar_studentModel1.LEAVES">
+            <EntityTypeMapping TypeName="LeaveModel.LEAVES">
               <MappingFragment StoreEntitySet="LEAVES">
                 <ScalarProperty Name="LeaveId" ColumnName="LeaveId" />
                 <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
@@ -64,7 +62,6 @@
                 <ScalarProperty Name="NumberOfDays" ColumnName="NumberOfDays" />
                 <ScalarProperty Name="LeaveStatus" ColumnName="LeaveStatus" />
                 <ScalarProperty Name="Description" ColumnName="Description" />
-                <ScalarProperty Name="LeaveDocumnet" ColumnName="LeaveDocumnet" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

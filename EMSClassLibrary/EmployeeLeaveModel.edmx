@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="EmployeeLeavesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="EmployeeLeaveModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="EMPLOYEELEAVES">
           <Key>
             <PropertyRef Name="EmployeeId" />
@@ -12,16 +12,16 @@
           </Key>
           <Property Name="EmployeeId" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="LeaveTypeId" Type="int" Nullable="false" />
-          <Property Name="NumberOfLeaves" Type="int" Nullable="false" />
+          <Property Name="NumberOfLeaves" Type="float" />
         </EntityType>
-        <EntityContainer Name="EmployeeLeavesModelStoreContainer">
+        <EntityContainer Name="EmployeeLeaveModelStoreContainer">
           <EntitySet Name="EMPLOYEELEAVES" EntityType="Self.EMPLOYEELEAVES" Schema="navkar_student" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="EmployeeLeavesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="EmployeeLeaveModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="EMPLOYEELEAVES">
           <Key>
             <PropertyRef Name="EmployeeId" />
@@ -29,7 +29,7 @@
           </Key>
           <Property Name="EmployeeId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="LeaveTypeId" Type="Int32" Nullable="false" />
-          <Property Name="NumberOfLeaves" Type="Int32" Nullable="false" />
+          <Property Name="NumberOfLeaves" Type="Double" />
         </EntityType>
         <EntityContainer Name="EmployeeLeaveEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="EMPLOYEELEAVES" EntityType="Self.EMPLOYEELEAVES" />
@@ -39,9 +39,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="EmployeeLeavesModelStoreContainer" CdmEntityContainer="EmployeeLeaveEntities">
+        <EntityContainerMapping StorageEntityContainer="EmployeeLeaveModelStoreContainer" CdmEntityContainer="EmployeeLeaveEntities">
           <EntitySetMapping Name="EMPLOYEELEAVES">
-            <EntityTypeMapping TypeName="EmployeeLeavesModel.EMPLOYEELEAVES">
+            <EntityTypeMapping TypeName="EmployeeLeaveModel.EMPLOYEELEAVES">
               <MappingFragment StoreEntitySet="EMPLOYEELEAVES">
                 <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
                 <ScalarProperty Name="LeaveTypeId" ColumnName="LeaveTypeId" />

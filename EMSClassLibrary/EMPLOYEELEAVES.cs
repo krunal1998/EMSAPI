@@ -16,6 +16,6 @@ namespace EMSClassLibrary
     {
         public string EmployeeId { get; set; }
         public int LeaveTypeId { get; set; }
-        public int NumberOfLeaves { get; set; }
+        public Nullable<double> NumberOfLeaves { get; set; }
     }
 }

@@ -18,3 +18,13 @@ C:\Users\chang\OneDrive\Documents\Visual Studio 2015\Projects\EMSAPI\EMSClassLib
 C:\Users\chang\OneDrive\Documents\Visual Studio 2015\Projects\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.csprojResolveAssemblyReference.cache
 C:\Users\chang\OneDrive\Documents\Visual Studio 2015\Projects\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.dll
 C:\Users\chang\OneDrive\Documents\Visual Studio 2015\Projects\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.pdb
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EMSClassLibrary.dll.config
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EMSClassLibrary.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EMSClassLibrary.pdb
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EntityFramework.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EntityFramework.xml
+H:\internship\EMSAPI\EMSClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+H:\internship\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.csprojResolveAssemblyReference.cache
+H:\internship\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.dll
+H:\internship\EMSAPI\EMSClassLibrary\obj\Debug\EMSClassLibrary.pdb

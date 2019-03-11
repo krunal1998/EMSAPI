@@ -43,6 +43,38 @@ namespace EMSAPI.Controllers
             }
 
         }
+        //get leave data for specific leave type
+        public HttpResponseMessage GetEmployeeLeave(int leavetypeid)
+        {
+            try
+            {
+                using (EmployeeLeaveEntities entity = new EmployeeLeaveEntities())
+                {
+                    return Request.CreateResponse(entity.EMPLOYEELEAVES.Where(e => e.LeaveTypeId == leavetypeid).ToList());
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+
+        }
+
+        public HttpResponseMessage GetEmployeeLeave(string employeeid, int leavetypeid)
+        {
+            try
+            {
+                using (EmployeeLeaveEntities entity = new EmployeeLeaveEntities())
+                {
+                    return Request.CreateResponse(entity.EMPLOYEELEAVES.Where(e => (e.EmployeeId.Equals(employeeid) & e.LeaveTypeId == leavetypeid)).ToList());
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+
+        }
 
         //Add record
         public HttpResponseMessage Post([FromBody]EMPLOYEELEAVES employeeleave)

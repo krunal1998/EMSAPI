@@ -10,10 +10,10 @@
             <PropertyRef Name="HolidayId" />
           </Key>
           <Property Name="HolidayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="HolidayName" Type="nchar" MaxLength="10" Nullable="false" />
+          <Property Name="HolidayName" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="HolidayDate" Type="date" Nullable="false" />
-          <Property Name="WorkDuration" Type="int" />
-          <Property Name="RepeatedAnnually" Type="bit" />
+          <Property Name="WorkDuration" Type="int" Nullable="false" />
+          <Property Name="RepeatedAnnually" Type="int" Nullable="false" />
         </EntityType>
         <EntityContainer Name="HolidayModelStoreContainer">
           <EntitySet Name="HOLIDAYS" EntityType="Self.HOLIDAYS" Schema="navkar_student" store:Type="Tables" />
@@ -28,10 +28,10 @@
             <PropertyRef Name="HolidayId" />
           </Key>
           <Property Name="HolidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="HolidayName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="HolidayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="HolidayDate" Type="DateTime" Nullable="false" Precision="0" />
-          <Property Name="WorkDuration" Type="Int32" />
-          <Property Name="RepeatedAnnually" Type="Boolean" />
+          <Property Name="WorkDuration" Type="Int32" Nullable="false" />
+          <Property Name="RepeatedAnnually" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityContainer Name="HolidayEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="HOLIDAYS" EntityType="Self.HOLIDAYS" />

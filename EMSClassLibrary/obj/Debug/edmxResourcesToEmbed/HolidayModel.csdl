@@ -5,10 +5,10 @@
       <PropertyRef Name="HolidayId" />
     </Key>
     <Property Name="HolidayId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="HolidayName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="HolidayName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
     <Property Name="HolidayDate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="WorkDuration" Type="Int32" />
-    <Property Name="RepeatedAnnually" Type="Boolean" />
+    <Property Name="WorkDuration" Type="Int32" Nullable="false" />
+    <Property Name="RepeatedAnnually" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityContainer Name="HolidayEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="HOLIDAYS" EntityType="Self.HOLIDAYS" />

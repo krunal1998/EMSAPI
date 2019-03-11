@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="fa96a127705f46e7857eba1de142e9fb" Name="Diagram1">
+      <Diagram DiagramId="dc345adb39fd4347a9e226f5d0965fa2" Name="Diagram1">
         <EntityTypeShape EntityType="HolidayModel.HOLIDAYS" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

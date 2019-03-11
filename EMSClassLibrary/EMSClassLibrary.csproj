@@ -340,23 +340,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="LeaveModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LeaveModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LeaveModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="LEAVES.cs">
-      <DependentUpon>LeavesModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LeavesModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LeavesModel.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LeavesModel.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LeavesModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LeavesModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LeavesModel.edmx</DependentUpon>
+      <DependentUpon>LeaveModel.tt</DependentUpon>
     </Compile>
     <Compile Include="LEAVETYPE.cs">
       <DependentUpon>LeaveTypeModel.tt</DependentUpon>
@@ -576,6 +576,10 @@
     <None Include="App.Config">
       <SubType>Designer</SubType>
     </None>
+    <EntityDeploy Include="ComplainsModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>ComplainsModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <EntityDeploy Include="AttendanceModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AttendanceModel.Designer.cs</LastGenOutput>
@@ -583,14 +587,6 @@
     <None Include="AttendanceModel.edmx.diagram">
       <DependentUpon>AttendanceModel.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="EmployeeLeaveModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>EmployeeLeaveModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <EntityDeploy Include="ComplainsModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ComplainsModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="ComplainsModel.edmx.diagram">
       <DependentUpon>ComplainsModel.edmx</DependentUpon>
     </None>
@@ -636,9 +632,6 @@
     <None Include="EmergencyContactModel.edmx.diagram">
       <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
     </None>
-    <None Include="EmployeeLeaveModel.edmx.diagram">
-      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
-    </None>
     <EntityDeploy Include="LeaveTypeModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LeaveTypeModel.Designer.cs</LastGenOutput>
@@ -647,14 +640,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>JobTitleModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <EntityDeploy Include="HolidayModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>HolidayModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <EntityDeploy Include="EmployeeModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EmployeeModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="EmployeeLeaveModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EmployeeLeaveModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EmployeeLeaveModel.edmx.diagram">
+      <DependentUpon>EmployeeLeaveModel.edmx</DependentUpon>
+    </None>
     <None Include="EmployeeModel.edmx.diagram">
       <DependentUpon>EmployeeModel.edmx</DependentUpon>
     </None>
@@ -665,16 +661,16 @@
     <None Include="GeneratedReviewModel.edmx.diagram">
       <DependentUpon>GeneratedReviewModel.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="HolidayModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HolidayModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <None Include="HolidayModel.edmx.diagram">
       <DependentUpon>HolidayModel.edmx</DependentUpon>
     </None>
     <None Include="JobTitleModel.edmx.diagram">
       <DependentUpon>JobTitleModel.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="LeavesModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>LeavesModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <EntityDeploy Include="LeaveAllocationModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>LeaveAllocationModel.Designer.cs</LastGenOutput>
@@ -682,8 +678,12 @@
     <None Include="LeaveAllocationModel.edmx.diagram">
       <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
     </None>
-    <None Include="LeavesModel.edmx.diagram">
-      <DependentUpon>LeavesModel.edmx</DependentUpon>
+    <EntityDeploy Include="LeaveModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LeaveModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="LeaveModel.edmx.diagram">
+      <DependentUpon>LeaveModel.edmx</DependentUpon>
     </None>
     <None Include="LeaveTypeModel.edmx.diagram">
       <DependentUpon>LeaveTypeModel.edmx</DependentUpon>
@@ -921,15 +921,15 @@
       <DependentUpon>LeaveAllocationModel.edmx</DependentUpon>
       <LastGenOutput>LeaveAllocationModel.cs</LastGenOutput>
     </Content>
-    <Content Include="LeavesModel.Context.tt">
+    <Content Include="LeaveModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LeavesModel.edmx</DependentUpon>
-      <LastGenOutput>LeavesModel.Context.cs</LastGenOutput>
+      <DependentUpon>LeaveModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="LeavesModel.tt">
+    <Content Include="LeaveModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>LeavesModel.edmx</DependentUpon>
-      <LastGenOutput>LeavesModel.cs</LastGenOutput>
+      <DependentUpon>LeaveModel.edmx</DependentUpon>
+      <LastGenOutput>LeaveModel.cs</LastGenOutput>
     </Content>
     <Content Include="LeaveTypeModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

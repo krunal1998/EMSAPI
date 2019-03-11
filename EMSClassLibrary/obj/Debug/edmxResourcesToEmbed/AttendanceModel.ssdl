@@ -7,8 +7,8 @@
     </Key>
     <Property Name="EmployeeId" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="PunchInDate" Type="date" Nullable="false" />
-    <Property Name="PunchInTime" Type="time" Precision="7" Nullable="false" />
-    <Property Name="PunchOutTime" Type="time" Precision="7" Nullable="false" />
+    <Property Name="PunchInTime" Type="time" Precision="7" />
+    <Property Name="PunchOutTime" Type="time" Precision="7" />
     <Property Name="WorkingHours" Type="float" Nullable="false" />
   </EntityType>
   <EntityContainer Name="AttendanceModelStoreContainer">

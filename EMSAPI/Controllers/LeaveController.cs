@@ -162,7 +162,34 @@ namespace EMSAPI.Controllers
                         en.LeaveStatus = leave.LeaveStatus;
                         en.NumberOfDays = leave.NumberOfDays;
                         en.Description = leave.Description;
-                        en.LeaveDocumnet = en.LeaveDocumnet;
+                        
+                        entity.SaveChanges();
+                        return Request.CreateResponse(HttpStatusCode.OK);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
+            }
+        }
+
+        public HttpResponseMessage Putleavestatus(int leaveid, [FromBody]LEAVES leave)
+        {
+            try
+            {
+
+                using (LeaveEntities entity = new LeaveEntities())
+                {
+                    var en = entity.LEAVES.FirstOrDefault(e => e.LeaveId == leaveid);
+                    if (en == null)
+                    {
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "leave record doesn't exist");
+                    }
+                    else
+                    {
+                        en.LeaveStatus = leave.LeaveStatus;
+
 
                         entity.SaveChanges();
                         return Request.CreateResponse(HttpStatusCode.OK);

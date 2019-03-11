@@ -16,8 +16,8 @@ namespace EMSClassLibrary
     {
         public string EmployeeId { get; set; }
         public System.DateTime PunchInDate { get; set; }
-        public System.TimeSpan PunchInTime { get; set; }
-        public System.TimeSpan PunchOutTime { get; set; }
+        public Nullable<System.TimeSpan> PunchInTime { get; set; }
+        public Nullable<System.TimeSpan> PunchOutTime { get; set; }
         public double WorkingHours { get; set; }
     }
 }
