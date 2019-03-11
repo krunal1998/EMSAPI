@@ -216,6 +216,7 @@
     <Compile Include="Controllers\DeductionsController.cs" />
     <Compile Include="Controllers\DeductionStructureController.cs" />
     <Compile Include="Controllers\DocumentsController.cs" />
+    <Compile Include="Controllers\EducationController.cs" />
     <Compile Include="Controllers\EmergencyContactController.cs" />
     <Compile Include="Controllers\EmployeeLeavesController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
@@ -235,6 +236,7 @@
     <Compile Include="Controllers\SupervisorController.cs" />
     <Compile Include="Controllers\TasksController.cs" />
     <Compile Include="Controllers\WeekDayController.cs" />
+    <Compile Include="Controllers\WorkExperienceController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

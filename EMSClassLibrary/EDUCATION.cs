@@ -12,10 +12,14 @@ namespace EMSClassLibrary
     using System;
     using System.Collections.Generic;
     
-    public partial class ALLOCATEDALLOWANCES
+    public partial class EDUCATION
     {
-        public int AllowanceId { get; set; }
         public string EmployeeId { get; set; }
-        public Nullable<int> Salary { get; set; }
+        public Nullable<int> DocumentId { get; set; }
+        public string Degree { get; set; }
+        public string Institution { get; set; }
+        public Nullable<System.DateTime> StartYear { get; set; }
+        public Nullable<System.DateTime> EndYear { get; set; }
+        public int EducationId { get; set; }
     }
 }

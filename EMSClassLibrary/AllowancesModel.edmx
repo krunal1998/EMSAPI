@@ -11,6 +11,8 @@
           </Key>
           <Property Name="AllowanceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="AllowanceName" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="JobTitleId" Type="int" Nullable="false" />
+          <Property Name="DefaultPay" Type="int" />
         </EntityType>
         <EntityContainer Name="AllowancesModelStoreContainer">
           <EntitySet Name="ALLOWANCES" EntityType="Self.ALLOWANCES" Schema="navkar_student" store:Type="Tables" />
@@ -26,6 +28,8 @@
           </Key>
           <Property Name="AllowanceId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="AllowanceName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="JobTitleId" Type="Int32" Nullable="false" />
+          <Property Name="DefaultPay" Type="Int32" />
         </EntityType>
         <EntityContainer Name="AllowancesEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ALLOWANCES" EntityType="Self.ALLOWANCES" />
@@ -41,6 +45,8 @@
               <MappingFragment StoreEntitySet="ALLOWANCES">
                 <ScalarProperty Name="AllowanceId" ColumnName="AllowanceId" />
                 <ScalarProperty Name="AllowanceName" ColumnName="AllowanceName" />
+                <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+                <ScalarProperty Name="DefaultPay" ColumnName="DefaultPay" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

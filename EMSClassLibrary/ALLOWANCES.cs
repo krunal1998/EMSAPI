@@ -16,5 +16,7 @@ namespace EMSClassLibrary
     {
         public int AllowanceId { get; set; }
         public string AllowanceName { get; set; }
+        public int JobTitleId { get; set; }
+        public Nullable<int> DefaultPay { get; set; }
     }
 }

@@ -214,6 +214,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DocumentsModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="EDUCATION.cs">
+      <DependentUpon>EducationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EducationModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EducationModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EducationModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EducationModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="EMERGENCYCONTACT.cs">
       <DependentUpon>EmergencyContactModel.tt</DependentUpon>
     </Compile>
@@ -557,8 +575,30 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>WeekDayModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="WORKEXPERIENCE.cs">
+      <DependentUpon>WorkExperienceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkExperienceModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkExperienceModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkExperienceModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkExperienceModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WorkExperienceModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WorkExperienceModel.edmx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="AllowancesModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>AllowancesModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
     <EntityDeploy Include="AllocatedAllowancesModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>AllocatedAllowancesModel.Designer.cs</LastGenOutput>
@@ -566,10 +606,6 @@
     <None Include="AllocatedAllowancesModel.edmx.diagram">
       <DependentUpon>AllocatedAllowancesModel.edmx</DependentUpon>
     </None>
-    <EntityDeploy Include="AllowancesModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>AllowancesModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
     <None Include="AllowancesModel.edmx.diagram">
       <DependentUpon>AllowancesModel.edmx</DependentUpon>
     </None>
@@ -629,6 +665,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>EmergencyContactModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="EducationModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>EducationModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="EducationModel.edmx.diagram">
+      <DependentUpon>EducationModel.edmx</DependentUpon>
+    </None>
     <None Include="EmergencyContactModel.edmx.diagram">
       <DependentUpon>EmergencyContactModel.edmx</DependentUpon>
     </None>
@@ -759,6 +802,13 @@
     <None Include="WeekDayModel.edmx.diagram">
       <DependentUpon>WeekDayModel.edmx</DependentUpon>
     </None>
+    <EntityDeploy Include="WorkExperienceModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>WorkExperienceModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="WorkExperienceModel.edmx.diagram">
+      <DependentUpon>WorkExperienceModel.edmx</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AllocatedAllowancesModel.Context.tt">
@@ -850,6 +900,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DocumentsModel.edmx</DependentUpon>
       <LastGenOutput>DocumentsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="EducationModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EducationModel.edmx</DependentUpon>
+      <LastGenOutput>EducationModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="EducationModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>EducationModel.edmx</DependentUpon>
+      <LastGenOutput>EducationModel.cs</LastGenOutput>
     </Content>
     <Content Include="EmergencyContactModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -1040,6 +1100,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>WeekDayModel.edmx</DependentUpon>
       <LastGenOutput>WeekDayModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="WorkExperienceModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WorkExperienceModel.edmx</DependentUpon>
+      <LastGenOutput>WorkExperienceModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="WorkExperienceModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>WorkExperienceModel.edmx</DependentUpon>
+      <LastGenOutput>WorkExperienceModel.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

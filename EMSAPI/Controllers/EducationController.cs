@@ -5,17 +5,18 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using EMSClassLibrary;
+
 namespace EMSAPI.Controllers
 {
-    public class AllowancesController : ApiController
+    public class EducationController : ApiController
     {
         public HttpResponseMessage get()
         {
             try
             {
-                using (AllowancesEntities entities = new AllowancesEntities())
+                using (EducationEntities entities = new EducationEntities())
                 {
-                    return Request.CreateResponse(HttpStatusCode.OK, entities.ALLOWANCES.ToList());
+                    return Request.CreateResponse(HttpStatusCode.OK, entities.EDUCATION.ToList());
                 }
             }
             catch (Exception ex)
@@ -28,11 +29,11 @@ namespace EMSAPI.Controllers
         {
             try
             {
-                using (AllowancesEntities entities = new AllowancesEntities())
+                using (EducationEntities entities = new EducationEntities())
                 {
-                    ALLOWANCES allowances = entities.ALLOWANCES.FirstOrDefault(e => e.AllowanceId == id);
-                    if (allowances != null)
-                        return Request.CreateResponse(HttpStatusCode.OK, allowances);
+                    EDUCATION education = entities.EDUCATION.FirstOrDefault(e => e.EducationId == id);
+                    if (education != null)
+                        return Request.CreateResponse(HttpStatusCode.OK, education);
 
                     else
                         return Request.CreateErrorResponse(HttpStatusCode.NotFound, "No entity with id " + id + "found!");
@@ -44,16 +45,16 @@ namespace EMSAPI.Controllers
             }
         }
 
-        public HttpResponseMessage post([FromBody] ALLOWANCES allowances)
+        public HttpResponseMessage post([FromBody] EDUCATION education)
         {
             try
             {
-                using (AllowancesEntities entities = new AllowancesEntities())
+                using (EducationEntities entities = new EducationEntities())
                 {
-                    entities.ALLOWANCES.Add(allowances);
+                    entities.EDUCATION.Add(education);
                     entities.SaveChanges();
-                    HttpResponseMessage message = Request.CreateResponse(HttpStatusCode.Created, allowances);
-                    message.Headers.Location = new Uri(Request.RequestUri + allowances.AllowanceId.ToString());
+                    HttpResponseMessage message = Request.CreateResponse(HttpStatusCode.Created, education);
+                    message.Headers.Location = new Uri(Request.RequestUri + education.EducationId.ToString());
                     return message;
                 }
             }
@@ -67,14 +68,14 @@ namespace EMSAPI.Controllers
         {
             try
             {
-                using (AllowancesEntities entities = new AllowancesEntities())
+                using (EducationEntities entities = new EducationEntities())
                 {
-                    var entity = entities.ALLOWANCES.FirstOrDefault(e => e.AllowanceId == id);
+                    var entity = entities.EDUCATION.FirstOrDefault(e => e.EducationId == id);
                     if (entity == null)
-                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Allowances doesnt exist");
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Education doesnt exist");
                     else
                     {
-                        entities.ALLOWANCES.Remove(entity);
+                        entities.EDUCATION.Remove(entity);
                         entities.SaveChanges();
                         return Request.CreateResponse(HttpStatusCode.OK);
                     }
@@ -85,22 +86,24 @@ namespace EMSAPI.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ex);
             }
         }
-        public HttpResponseMessage put(int id, ALLOWANCES allowances)
+        public HttpResponseMessage put(int id, EDUCATION education)
         {
             try
             {
-                using (AllowancesEntities entities = new AllowancesEntities())
+                using (EducationEntities entities = new EducationEntities())
                 {
-                    var entity = entities.ALLOWANCES.FirstOrDefault(e => e.AllowanceId == id);
+                    var entity = entities.EDUCATION.FirstOrDefault(e => e.EducationId == id);
                     if (entity == null)
-                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Allowances doesnt exist");
+                        return Request.CreateErrorResponse(HttpStatusCode.NotFound, "Education doesnt exist");
                     else
                     {
-                        entity.AllowanceId = allowances.AllowanceId;
-                        entity.AllowanceName = allowances.AllowanceName;
-                        entity.JobTitleId = allowances.JobTitleId;
-                        entity.DefaultPay = allowances.DefaultPay;
-
+                        entity.EducationId = education.EducationId;
+                        entity.EmployeeId = education.EmployeeId;
+                        entity.DocumentId = education.DocumentId;
+                        entity.Degree = education.Degree;
+                        entity.Institution = education.Institution;
+                        entity.StartYear = education.StartYear;
+                        entity.EndYear = education.EndYear;
                         entities.SaveChanges();
 
                         return Request.CreateResponse(HttpStatusCode.OK);
