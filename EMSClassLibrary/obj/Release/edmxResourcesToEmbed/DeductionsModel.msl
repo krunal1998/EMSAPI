@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DeductionsModelStoreContainer" CdmEntityContainer="DeductionsEntities">
+    <EntitySetMapping Name="DEDUCTIONS">
+      <EntityTypeMapping TypeName="DeductionsModel.DEDUCTIONS">
+        <MappingFragment StoreEntitySet="DEDUCTIONS">
+          <ScalarProperty Name="DeductionId" ColumnName="DeductionId" />
+          <ScalarProperty Name="DeductionName" ColumnName="DeductionName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

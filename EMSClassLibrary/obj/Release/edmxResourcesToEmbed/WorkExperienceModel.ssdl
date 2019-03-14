@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WorkExperienceModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="WORKEXPERIENCE">
+    <Key>
+      <PropertyRef Name="WorkExperienceId" />
+    </Key>
+    <Property Name="EmployeeId" Type="varchar" MaxLength="50" />
+    <Property Name="DocumentId" Type="int" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="50" />
+    <Property Name="JobTitle" Type="varchar" MaxLength="50" />
+    <Property Name="StartDate" Type="date" />
+    <Property Name="Enddate" Type="date" />
+    <Property Name="WorkExperienceId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WorkExperienceModelStoreContainer">
+    <EntitySet Name="WORKEXPERIENCE" EntityType="Self.WORKEXPERIENCE" Schema="navkar_student" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

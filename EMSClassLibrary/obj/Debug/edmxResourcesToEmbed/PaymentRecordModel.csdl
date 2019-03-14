@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PaymentRecordModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="PAYMENTRECORD">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="Int32" Nullable="false" />
+    <Property Name="PaymentMonth" Type="Int32" />
+    <Property Name="PaymentYear" Type="Int32" />
+    <Property Name="EmployeeId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="JobTitle" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BasicPay" Type="Int32" />
+    <Property Name="HRA" Type="Int32" />
+    <Property Name="TA" Type="Int32" />
+    <Property Name="OtherAllowances" Type="Int32" />
+    <Property Name="EPF" Type="Int32" />
+    <Property Name="Tax" Type="Int32" />
+    <Property Name="Absence" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="PaymentRecordEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="PAYMENTRECORD" EntityType="Self.PAYMENTRECORD" />
+  </EntityContainer>
+</Schema>

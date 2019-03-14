@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ComplainsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="COMPLAINS">
+    <Key>
+      <PropertyRef Name="ComplainId" />
+    </Key>
+    <Property Name="ComplainId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="ComplainTypeId" Type="int" Nullable="false" />
+    <Property Name="ComplainDescription" Type="varchar(max)" />
+    <Property Name="ComplainStatus" Type="varchar" MaxLength="50" />
+    <Property Name="FeedbackRating" Type="int" />
+    <Property Name="feedbackDescription" Type="varchar(max)" />
+    <Property Name="ComplainDate" Type="date" />
+  </EntityType>
+  <EntityContainer Name="ComplainsModelStoreContainer">
+    <EntitySet Name="COMPLAINS" EntityType="Self.COMPLAINS" Schema="navkar_student" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

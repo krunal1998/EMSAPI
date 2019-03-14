@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmergencyContactModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMERGENCYCONTACT">
+    <Key>
+      <PropertyRef Name="EmergencyContactId" />
+    </Key>
+    <Property Name="EmergencyContactId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Relation" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telephone" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Mobile" Type="Decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="EmergencyContactEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMERGENCYCONTACT" EntityType="Self.EMERGENCYCONTACT" />
+  </EntityContainer>
+</Schema>

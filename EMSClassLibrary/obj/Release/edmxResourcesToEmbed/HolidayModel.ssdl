@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HolidayModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="HOLIDAYS">
+    <Key>
+      <PropertyRef Name="HolidayId" />
+    </Key>
+    <Property Name="HolidayId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HolidayName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="HolidayDate" Type="date" Nullable="false" />
+    <Property Name="WorkDuration" Type="int" Nullable="false" />
+    <Property Name="RepeatedAnnually" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="HolidayModelStoreContainer">
+    <EntitySet Name="HOLIDAYS" EntityType="Self.HOLIDAYS" Schema="navkar_student" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

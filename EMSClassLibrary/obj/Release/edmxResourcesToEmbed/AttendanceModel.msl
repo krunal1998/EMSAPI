@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AttendanceModelStoreContainer" CdmEntityContainer="AttendanceEntities">
+    <EntitySetMapping Name="ATTENDANCE">
+      <EntityTypeMapping TypeName="AttendanceModel.ATTENDANCE">
+        <MappingFragment StoreEntitySet="ATTENDANCE">
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="PunchInDate" ColumnName="PunchInDate" />
+          <ScalarProperty Name="PunchInTime" ColumnName="PunchInTime" />
+          <ScalarProperty Name="PunchOutTime" ColumnName="PunchOutTime" />
+          <ScalarProperty Name="WorkingHours" ColumnName="WorkingHours" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

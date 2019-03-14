@@ -1,0 +1,10 @@
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EMSClassLibrary.dll.config
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EMSClassLibrary.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EMSClassLibrary.pdb
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EntityFramework.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EntityFramework.SqlServer.dll
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EntityFramework.xml
+H:\internship\EMSAPI\EMSClassLibrary\bin\Release\EntityFramework.SqlServer.xml
+H:\internship\EMSAPI\EMSClassLibrary\obj\Release\EMSClassLibrary.csprojResolveAssemblyReference.cache
+H:\internship\EMSAPI\EMSClassLibrary\obj\Release\EMSClassLibrary.dll
+H:\internship\EMSAPI\EMSClassLibrary\obj\Release\EMSClassLibrary.pdb

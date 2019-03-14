@@ -412,6 +412,24 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="PAYMENTRECORD.cs">
+      <DependentUpon>PaymentRecordModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentRecordModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentRecordModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentRecordModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentRecordModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="PERFORMANCEPARAMETER.cs">
       <DependentUpon>PerformanceParameterModel.tt</DependentUpon>
     </Compile>
@@ -755,6 +773,13 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PerformanceParameterModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EntityDeploy Include="PaymentRecordModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>PaymentRecordModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="PaymentRecordModel.edmx.diagram">
+      <DependentUpon>PaymentRecordModel.edmx</DependentUpon>
+    </None>
     <None Include="PerformanceParameterModel.edmx.diagram">
       <DependentUpon>PerformanceParameterModel.edmx</DependentUpon>
     </None>
@@ -1010,6 +1035,16 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>LoginDetailsModel.edmx</DependentUpon>
       <LastGenOutput>LoginDetailsModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="PaymentRecordModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PaymentRecordModel.edmx</DependentUpon>
+      <LastGenOutput>PaymentRecordModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="PaymentRecordModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>PaymentRecordModel.edmx</DependentUpon>
+      <LastGenOutput>PaymentRecordModel.cs</LastGenOutput>
     </Content>
     <Content Include="PerformanceParameterModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>

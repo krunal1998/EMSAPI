@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GeneratedReviewModelStoreContainer" CdmEntityContainer="GeneratedReviewEntities">
+    <EntitySetMapping Name="GENERATEREVIEW">
+      <EntityTypeMapping TypeName="GeneratedReviewModel.GENERATEREVIEW">
+        <MappingFragment StoreEntitySet="GENERATEREVIEW">
+          <ScalarProperty Name="GenerateReviewId" ColumnName="GenerateReviewId" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WeekDayModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="WEEKDAY">
+    <Key>
+      <PropertyRef Name="WeekDayId" />
+    </Key>
+    <Property Name="WeekDayId" Type="Int32" Nullable="false" />
+    <Property Name="WeekDayName" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="WeekDayDuration" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="WeekDayEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="WEEKDAY" EntityType="Self.WEEKDAY" />
+  </EntityContainer>
+</Schema>
