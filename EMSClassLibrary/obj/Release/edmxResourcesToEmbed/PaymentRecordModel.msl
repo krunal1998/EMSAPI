@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PaymentRecordModelStoreContainer" CdmEntityContainer="PaymentRecordEntities">
+    <EntitySetMapping Name="PAYMENTRECORD">
+      <EntityTypeMapping TypeName="PaymentRecordModel.PAYMENTRECORD">
+        <MappingFragment StoreEntitySet="PAYMENTRECORD">
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="PaymentMonth" ColumnName="PaymentMonth" />
+          <ScalarProperty Name="PaymentYear" ColumnName="PaymentYear" />
+          <ScalarProperty Name="EmployeeId" ColumnName="EmployeeId" />
+          <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+          <ScalarProperty Name="BasicPay" ColumnName="BasicPay" />
+          <ScalarProperty Name="HRA" ColumnName="HRA" />
+          <ScalarProperty Name="TA" ColumnName="TA" />
+          <ScalarProperty Name="OtherAllowances" ColumnName="OtherAllowances" />
+          <ScalarProperty Name="EPF" ColumnName="EPF" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Absence" ColumnName="Absence" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

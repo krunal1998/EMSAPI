@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PaymentRecordModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="PAYMENTRECORD">
+    <Key>
+      <PropertyRef Name="PaymentID" />
+    </Key>
+    <Property Name="PaymentID" Type="int" Nullable="false" />
+    <Property Name="PaymentMonth" Type="int" />
+    <Property Name="PaymentYear" Type="int" />
+    <Property Name="EmployeeId" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="JobTitle" Type="varchar" MaxLength="50" />
+    <Property Name="BasicPay" Type="int" />
+    <Property Name="HRA" Type="int" />
+    <Property Name="TA" Type="int" />
+    <Property Name="OtherAllowances" Type="int" />
+    <Property Name="EPF" Type="int" />
+    <Property Name="Tax" Type="int" />
+    <Property Name="Absence" Type="int" />
+  </EntityType>
+  <EntityContainer Name="PaymentRecordModelStoreContainer">
+    <EntitySet Name="PAYMENTRECORD" EntityType="Self.PAYMENTRECORD" Schema="navkar_student" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
